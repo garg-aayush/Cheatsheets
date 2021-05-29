@@ -19,6 +19,34 @@
 | `git config --global core.editor <editor name>` | set the default editor for git to use |
 | `git config <key>` | get the key value from the config |
 
+## Stage and commit
+| Command             | Description |
+| -----------------   | ----------- |
+| `git status`        | show modified files and files staged for commit |
+| `git add <file or .(all)>` | add/stage files for commit |
+| `git commit -m ¨<message>¨` | commit your staged content (snapshot) |
+| `git reset <file>` | unstage a file |
+
+## Inspect
+| Command             | Description |
+| -----------------   | ----------- |
+| `git log`        | commit history for the current active branch |
+| `git log -n #` | list last n number of commits |
+| `git log <branch1>..<branch2>` | commits between branch1 and branch2 |
+| `git log <branch1> ^<branch2>` | commits in branch1 that are not in branch2 |
+| `git log -p <file>` | lists the commits ands changes for a particular file over its history |
+| `git log --oneline --decorate --graph` | pretty git logs |
+
+## Compare
+| Command             | Description |
+| -----------------   | ----------- |
+| `git log`        | commit history for the current active branch |
+| `git log -n #` | list last n number of commits |
+| `git log <branch1>..<branch2>` | commits between branch1 and branch2 |
+| `git log <branch1> ^<branch2>` | commits in branch1 that are not in branch2 |
+| `git log -p <file>` | lists the commits ands changes for a particular file over its history |
+| `git log --oneline --decorate --graph` | pretty git logs |
+
 
 ## Some useful links
 - [Switching remote URLs from HTTPS to SSH](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https)
